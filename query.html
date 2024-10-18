@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      * {
+        font-family: "Poppins", system-ui;
+      }
+      nav {
+        background-color: aliceblue;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-block: 10px;
+      }
+      .routes {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .login-btn {
+        background-color: crimson;
+        color: white;
+        padding: 5px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      .navbar .logo {
+        max-width: 100px;
+      }
+      .routes {
+        font-weight: 500;
+        cursor: pointer;
+      }
+      .routes *:hover {
+        color: darkred;
+      }
+      .menu {
+        display: none;
+        background-color: crimson;
+        color: white;
+        padding: 5px 20px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      img {
+        width: 100%;
+      }
+      .max-width {
+        width: 95%;
+        max-width: 1200px;
+        margin-inline: auto;
+      }
+      .flex-container {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-block: 50px;
+      }
+      .flex-item {
+        flex-basis: calc(100% / 4 - 20px);
+      }
+      .content {
+        padding: 10px;
+      }
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .description {
+        font-size: 16px;
+        line-height: 1.5;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-block: 10px;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.654);
+        color: white;
+      }
+      .btn:hover {
+        background-color: rgb(0, 0, 0);
+      }
+      @media (max-width: 900px) {
+        /* body {
+          background-color: aquamarine;
+        } */
+        .flex-item {
+          flex-basis: calc(100% / 2 - 20px);
+        }
+      }
+      @media (max-width: 600px) {
+        .menu {
+          display: block;
+        }
+        .routes {
+          display: none;
+        }
+        .flex-item {
+          flex-basis: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <section class="navbar max-width">
+        <img
+          class="logo"
+          src="https://1000logos.net/wp-content/uploads/2018/02/BMW-Logo-1997.png"
+          alt="logo"
+        />
+        <div class="routes">
+          <span>Home</span>
+          <span>About us</span>
+          <span>Contant us</span>
+          <span class="login-btn">Login</span>
+        </div>
+        <div class="menu">menu</div>
+      </section>
+    </nav>
+    <main class="flex-container max-width">
+      <section class="flex-item">
+        <img
+          src="https://png.pngtree.com/thumb_back/fh260/background/20230901/pngtree-study-lamp-saata-raha-saata-ini-dengan-hd-1080p-image_13175365.jpg"
+          alt="img"
+        />
+        <div class="content">
+          <p class="title">Title</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
+            eius deleniti nobis, autem quidem dicta accusamus, minima cumque rem
+            sunt eos dolorem accusantium fugit! Culpa quo esse ratione animi
+            vitae!
+          </p>
+          <div class="btn">View</div>
+        </div>
+      </section>
+      <section class="flex-item">
+        <img
+          src="https://png.pngtree.com/thumb_back/fh260/background/20230901/pngtree-study-lamp-saata-raha-saata-ini-dengan-hd-1080p-image_13175365.jpg"
+          alt="img"
+        />
+        <div class="content">
+          <p class="title">Title</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
+            eius deleniti nobis, autem quidem dicta accusamus, minima cumque rem
+            sunt eos dolorem accusantium fugit! Culpa quo esse ratione animi
+            vitae!
+          </p>
+          <div class="btn">View</div>
+        </div>
+      </section>
+      <section class="flex-item">
+        <img
+          src="https://png.pngtree.com/thumb_back/fh260/background/20230901/pngtree-study-lamp-saata-raha-saata-ini-dengan-hd-1080p-image_13175365.jpg"
+          alt="img"
+        />
+        <div class="content">
+          <p class="title">Title</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
+            eius deleniti nobis, autem quidem dicta accusamus, minima cumque rem
+            sunt eos dolorem accusantium fugit! Culpa quo esse ratione animi
+            vitae!
+          </p>
+          <div class="btn">View</div>
+        </div>
+      </section>
+      <section class="flex-item">
+        <img
+          src="https://png.pngtree.com/thumb_back/fh260/background/20230901/pngtree-study-lamp-saata-raha-saata-ini-dengan-hd-1080p-image_13175365.jpg"
+          alt="img"
+        />
+        <div class="content">
+          <p class="title">Title</p>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia
+            eius deleniti nobis, autem quidem dicta accusamus, minima cumque rem
+            sunt eos dolorem accusantium fugit! Culpa quo esse ratione animi
+            vitae!
+          </p>
+          <div class="btn">View</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframe</title>
+    <style>
+        body{ 
+            background-color: black;
+
+        }
+        .box1{
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            background-color: rgba(255, 0, 0, 0);
+            top: 50%;
+            left: 50%;
+            translate: -50% -50% ;
+            scale: 0;
+            animation-name: shadow;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+
+        }
+        .box1:hover{
+            animation-play-state:paused;
+            animation-name: none;
+           
+        }
+        @keyframes shadow{
+            to {
+                box-shadow: 0px 0px 100px 100px rgba(219, 6, 92, 0.63);
+                scale: 1;
+                rotate: 360deg;
+                border-radius: 50%;
+                
+                
+            }
+        }
+        .box2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100px;
+            width: 100px;
+            background-color: #99cd32;
+            animation-name: move;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+           
+
+
+        }
+        @keyframes move {
+        25% {
+          top: calc(100% - 100px);
+          left: 0%;
+          background-color: aqua;
+        }
+        50% {
+          top: calc(100% - 100px);
+          left: calc(100% - 100px);
+          background-color: chartreuse;
+        }
+        75% {
+          top: 0%;
+          left: calc(100% - 100px);
+          background-color: crimson;
+        }
+      }
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    
+</body>
+</html>
